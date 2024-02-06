@@ -15,7 +15,6 @@ def single_run(prompt: str, img_path: str) -> float:
         reward = model.score(prompt, [img_path])
     return reward
 
-img_path = "/mnt/d/v1/v1_50_51_0_0_0_0_0_0.png"
 inn = Path("/mnt/d/v1/").glob("v1_50*.png")
 
 Path(f"/mnt/d/v1{prompt2}").mkdir(exist_ok=True)
